@@ -52,6 +52,15 @@ jobs:
        # use OpenBLAS build, not system ATLAS
        - DOWNLOAD_OPENBLAS=1
        - ATLAS=None
+       
+    - python: 3.8
+      os: linux
+      arch: amd64
+      virt: vm
+      env:
+       # use Open BLAS build, not system ATLAS
+       - DOWNLOAD_OPENBLAS=1
+       - ATLAS=None
 
     - python: 3.10-dev
       os: linux
